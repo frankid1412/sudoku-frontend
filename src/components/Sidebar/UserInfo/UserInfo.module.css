@@ -1,0 +1,94 @@
+.userInfoContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.creditButton {
+  border-radius: 100px;
+  background: var(--colors-primary, #6e41e2);
+  font-family: Roboto;
+  font-weight: 700;
+  box-shadow: 0px 4px 16px 0px rgba(51, 51, 51, 0.08),
+    0px 4px 4px 0px rgba(51, 51, 51, 0.04);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.creditValue {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px;
+}
+.description {
+  color: var(--colors-gray-k, #6b6b6b);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.creditIcon {
+  width: 16px;
+  height: 16px;
+  color: var(--colors-primary, #6e41e2);
+}
+.creditText {
+  color: var(--colors-primary, #6e41e2);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  flex: 1 0 0;
+}
+
+.addCreditButton {
+  display: flex;
+  border-radius: 4px;
+  border: 2px solid var(--colors-primary, #6e41e2);
+  color: var(--colors-primary, #6e41e2);
+  text-align: center;
+  margin: 30px 0px;
+  cursor: pointer;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colors-backgroundGray, #fafafa);
+}
+
+.creditButtonText {
+  color: var(--yourCreditGray, #f1f1f1);
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.userName {
+  display: flex;
+  padding: 0px 5px;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 53.887px;
+  height: 52px;
+  flex-shrink: 0;
+}
+.userNameText{
+
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
+color: var(--userNameGray, #393939); 
+}

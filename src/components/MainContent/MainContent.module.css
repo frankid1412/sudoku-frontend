@@ -1,0 +1,31 @@
+/* MainContent.module.css */
+
+.mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; /* 上下间距，可以根据需要调整 */
+    background-color: #f7f7f7; /* 背景色，可以根据需要调整 */
+  }
+  
+  .searchContainer {
+    width: 90%; /* 或者具体的宽度，如 1200px，取决于您的设计 */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* 与下一个容器的距离，可以调整 */
+    padding: 10px; /* 内边距，可以调整 */
+  }
+  
+  .categoriesContainer {
+    width: 90%; /* 或者具体的宽度 */
+   
+  }
+  
+  .cardsContainer {
+    width: 90%; /* 或者具体的宽度 */
+    flex-wrap: wrap; /* 如果卡片多了，允许它们换行 */
+    justify-content: space-around; /* 保持卡片之间有一些间距 */
+  }
+  
+  

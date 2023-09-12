@@ -1,0 +1,49 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15rem;
+  height: 100vh;
+  min-height: 100vh; 
+  flex-shrink: 0;
+  background-color: var(--colors-backgroundGray);
+  box-sizing: border-box;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  border-right: 0.1rem solid var(--borderpurple);
+  align-items: flex-start;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.navItem {
+  display: flex; 
+  font-family: Montserrat;
+  align-items: center; /* 垂直居中图标和标签 */
+  gap: 10px; /* 如果你想在图标和标签之间有间隙 */
+  text-decoration: none; /* 从链接中删除下划线 */
+  margin-bottom: 20px;
+  color: var(--colors-darkgray);
+  font-weight: 700;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+
+}
+
+.navItem:hover {
+  color: var(--colors-lightgray);
+}
+
+.navItem img {
+  transition: filter 0.3s ease; /* 为图标添加平滑过渡效果 */
+}
+
+.navItem:hover img {
+  filter: brightness(0.8); /* 使图标在hover时稍微暗淡，您可以根据需求调整此效果 */
+}
+
+

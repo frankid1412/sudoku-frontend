@@ -1,0 +1,33 @@
+.title {
+    color: var(--colors-black, #393939);
+    /* 40 Heading 3 */
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    margin-top: calc(6vh);
+    margin-left: calc(8vw);
+}
+
+.description {
+    color: #000;
+    /* 20 Paragraph 1 */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-left: calc(8vw);
+    margin-top: calc(1.2vh);
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    height: 50vh;
+    margin-left: calc(8vw);
+    margin-top: calc(3.6vh);
+}

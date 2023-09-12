@@ -1,0 +1,24 @@
+
+  .header {
+    position: sticky;  
+    top: 0;           
+    z-index: 1000;    
+    display: flex;
+    width: 100%;     
+    height: 4.4375rem; 
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    background: var(--colors-primary, #6E41E2);    
+  }
+  
+  .logoBox {
+    padding-left: 1.25rem;
+  }
+  
+  .header h1 {
+    color: var(--Headerwhite, white);
+    font-size: 24px; 
+    font-size: 1.5rem;
+  }
+  

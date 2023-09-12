@@ -1,0 +1,23 @@
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    margin: 0 auto;
+    
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) { /* 在屏幕宽度小于或等于768px时 */
+    .cardContainer {
+      grid-template-columns: 1fr; 
+      padding-left: 0px; /* 如果需要进一步向左推动卡片，可以调整此值 */
+    }
+  }
+  
+  

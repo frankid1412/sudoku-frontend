@@ -1,0 +1,210 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    gap: '20px';
+  }
+
+  .inputSpacing {
+    margin-bottom: 20px; /* 设置垂直间距为 20px */
+  }
+
+  .label {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    display: flex;
+    align-items: flex-start;
+  }
+  .emailInput {
+    padding: 16px; /* 添加一些内边距，使输入框内容离边框有一定距离 */
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    box-shadow: 2px 2px 6px rgba(109, 107, 107, 0.5);
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .passwordInput {
+    padding: 16px; /* 添加一些内边距，使输入框内容离边框有一定距离 */
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    box-shadow: 2px 2px 6px rgba(109, 107, 107, 0.5);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+  .button {
+    background-color: #6E41E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px; /* 扩大倒角 */
+    border: none; /* 移除边框 */
+    padding: 10px 20px; /* 扩大按钮尺寸 */
+    color: white; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示手型指针 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    width: 22vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+.errorpopup {
+    top: calc(29vh);
+    position: absolute;
+    background: rgba(221, 46, 68, 0.20);
+    /* color: white; */
+    padding: 16px;
+    /* position: absolute; */
+    /* top: 10px;
+    left: 50%; */
+    /* transform: translateX(-50%); */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 250px; */
+    height: calc(100vh / 36);
+    flex-shrink: 0;
+    width: 20vw;
+  }
+  
+  .errorpopup button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .group3 {
+    height: calc(100vh / 6);
+    width: calc(200vw / 6);
+    margin-top: calc(50vh / 6);
+    margin-left: calc(50vw / 6);
+    margin-right: calc(50vw / 6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame1 {
+    height: calc(120vh / 6);
+    width: calc(120vw / 6);
+    margin-top: calc(80vh / 6);
+    margin-left: calc(50vw / 6);
+    margin-right: calc(50vw / 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text1 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+
+  }
+
+  .text2 {
+    color: #747474;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    width: 22vw;
+
+  }
+
+  .text3 {
+    color: #747474;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    width: 22vw;
+    padding: 8px; /* 添加一些内边距，使输入框内容离边框有一定距离 */
+  }
+
+  .link1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration-line: underline;
+  }
+
+  .logoHead {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 64px; /* 114.286% */
+  }
+
+  .errormsg {
+    color: #000;
+    /* 20 Paragraph 1 Bold */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+  }
+
+  .icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .iconimage {
+    position: absolute;
+    margin-right: 10;
+    left: calc(205vw / 6);
+    color: black;
+  }
+
+  .password {
+    display: flex;
+    margin-bottom: 4;
+  }
+
+
+  .text4 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    width: 22vw;
+  }
+
+  /* https://dev.to/annaqharder/hideshow-password-in-react-513a */

@@ -1,0 +1,50 @@
+.card:hover {
+    transform: translateY(-0.3125rem);
+  }
+
+.card {
+  display: flex;
+  border-radius: 8px;
+  background: var(--colors-primary, #6E41E2);
+  width: 800px;
+  height: 130px;
+  flex-shrink: 0;
+  background-image: url("../../asset/CheckoutCardBackground.svg");
+
+}
+
+.amount_container{
+  margin-top: 44px;
+  margin-left: 78px;
+  display: flex;
+}
+
+.whitecoins {
+  height: 32px;
+  width: 32px;
+  margin-top: 6px;
+}
+
+.amount_text {
+  color: var(--colors-white-s, rgba(255, 255, 255, 0.88));
+  /* 40 Heading 3 */
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  margin-left: 4px;
+}
+
+.credit_text {
+  margin-top: 44px;
+  color: #FFF;
+  /* 40 Heading 3 */
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  margin-left: 376px;
+  position: absolute;
+}
