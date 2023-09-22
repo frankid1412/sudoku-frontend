@@ -1,5 +1,5 @@
 // const backendEndpoint = process.env.REACT_APP_API_ENDPOINT;
-const backendEndpoint = "https://blackcowtechtest.cloud:443";
+const backendEndpoint = "https://api.blackcowtechtest.cloud:443";
 // const backendEndpoint = "blackcowtechtest.cloud:403"
 
 const config = {
