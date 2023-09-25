@@ -2,18 +2,20 @@
 export const cardsData = [
     {label: 1,
       category: "Productive",
-      toolName: "Tool Name 1",
-      description: "Description for Tool Name 1",
+      toolName: "Text Extract",
+      description: "Convert PDFs, JPGs to Readable Text",
       action: "Use", 
-      cost: "Free"
+      cost: "Free",
+      url: "/text-extract" 
     },
     {
       label: 2,
       category: "Productive",
-      toolName: "Tool Name 2",
-      description: "Description for Tool Name 2",
+      toolName: "Transcribe",
+      description: "Transcribe audio to text",
       action: "Use",
-      cost: "Free"
+      cost: "10/min",
+      url: "/transcribe" 
     },
     {
       label: 3,

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.textExtractContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerContainer h1.headerH1 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerContainer h2.headerH2 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.languageSelectorContainer {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.downloadContainer {
+  color: var(--colors-gray-k);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.defaultH2 {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.succeededH2 {
+  color: var(--colors-green, #27ae60);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}

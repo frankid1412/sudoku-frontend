@@ -1,0 +1,50 @@
+/* 通用的布局、颜色、字体等都应该在这里定义。 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 水平布局，管理siderbar和maincontent */
+.mainArea {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sidebar {
+  flex: 0 0 15rem;
+}
+
+.textExtractPageArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 15rem;
+}
+
+.dashboardText {
+  align-self: flex-start; 
+  margin-top: 0.625rem;  
+  margin-left: 0.625rem; 
+}
+
+.dashboardLink {
+  color: var(--colors-primary-active, #472C8A);
+  margin-right: 0.625rem; 
+}
+.textracterLink {
+  color: var(--colors-primary-active, black); 
+  margin-right: 0.625rem; 
+}
+
+.errorMessage { 
+  color: var(--colors-error, red);
+  background-color: var(--colors-error-background, #ffe6e6);
+  padding: 0.625rem; 
+  border: 0.0625rem solid var(--colors-error, red); 
+  border-radius: 0.3125rem;
+  max-width: 80%;
+  margin: 0.625rem auto; 
+}

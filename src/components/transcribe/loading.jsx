@@ -1,11 +1,12 @@
 import './transcribe.css';
 function Loading(){
-    return (<div className="method-fieldset wrap">
-    <span className="title">Transcript</span>
-    <div className="content">
-          <h1>Loading...</h1>
-          <p>Please wait while we're processing your request.</p>
-    </div>
+    return (<div className="textDisplayEditorContainer">
+   <div className='centered-element'>
+        <div className="uploadingContainer">
+            <div className='uploadingText'>Loading...</div>
+            <div className='uploadingGif'></div>
+        </div>
+   </div>
 </div>)
 }
 

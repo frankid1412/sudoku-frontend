@@ -38,7 +38,6 @@
 .creditIcon {
   width: 16px;
   height: 16px;
-  color: var(--colors-primary, #6e41e2);
 }
 .creditText {
   color: var(--colors-primary, #6e41e2);

@@ -1,15 +1,4 @@
-/* 通用的布局、颜色、字体等都应该在这里定义。 */
 
-:root {
-  --colors-darkgray: #6b6b6b;
-  --colors-backgroundGray: #fafafa;
-  --colors-primary: #6e41e2;
-  --borderpurple: #e3daf9;
-  --yourCreditGray: #f1f1f1;
-  --userNameGray: #393939;
-  --colors-lightgray: #d8d8d8;
-  --Headerwhite: white;
-}
 .html {
   font-size: 10px; /* 设置1rem = 10px */
 }

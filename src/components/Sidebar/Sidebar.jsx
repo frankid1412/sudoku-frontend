@@ -7,9 +7,13 @@ const Sidebar = ({ userName, userCredit }) => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.navContainer}>
-        {navItems.map((item) => (
-          <a href={item.link} className={styles.navItem}>
-            <img src={item.icon} alt={item.label + "icon"} className={styles.navIcon}/>
+        {navItems.map((item, index) => (
+          <a href={item.link} className={styles.navItem} key={index}>
+            <img
+              src={item.icon}
+              alt={item.label + "icon"}
+              className={styles.navIcon}
+            />
             {item.label}
           </a>
         ))}

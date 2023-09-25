@@ -97,12 +97,20 @@
   border: 2px solid var(--colors-primary-active, #472c8a);
   color: var(--colors-primary, #6e41e2);
   background-color: transparent;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s, border-color 0.3s, color 0.3s; /* Add transitions */
 }
 
 .cardButton:hover {
-  background-color: #0056b3;
+  background-color: var(--colors-primary, #6e41e2); 
+  color: white; 
+  border-color: var(--colors-primary-active, #472c8a);
 }
 
+.cardButton:active {
+  transform: scale(0.95); /* Give the button a "pressed" effect when clicked */
+  background-color: var(--colors-primary-active, #472c8a); 
+}
 .userCreditContainer {
   display: flex;
   align-items: center;

@@ -3,7 +3,8 @@ import axios from 'axios';
 import './transcribe.css';
 import { v4 as uuidv4 } from 'uuid';
 import config from "../../config/config.js"
-
+import Fileicon from "../../asset/File.svg";
+import Checkicon from "../../asset/check.svg";
 
 function FileUpload({setText, setFinishedTrans, setLoading}) {
     const [file, setFile] = useState(null);
@@ -71,28 +72,38 @@ function FileUpload({setText, setFinishedTrans, setLoading}) {
     };
 
     return (
-        <div className="container">
-            <div className="upload-area" onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
-                <div className="upload-box">
+        <div className="textDisplayEditorContainer">
+            <div onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
+                <div className='dropYourFileText'>
                     {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
                     {file === null &&
                     <div>
-                        <h3>Drop your file here</h3>
-                        <h3>OR</h3>
-                        <input type="file" onChange={handleFileChange}/>
+                        <div className='dropAndSpacing'>Drop your file here</div>
+                        <div className='orSpacing'>OR</div>
+                        <div className='chooseFileDiv'>
+                            <div className='cFInnerDiv'>
+                                <img src={Fileicon} alt="Fileicon"/>
+                                <input type="file" onChange={handleFileChange}/>
+                            </div>
+                        </div>
                     </div>
                     }
 
                     {file !== null && (
-                    <div className="file-list">
-                        <h3>Successfully Upload</h3>
-                        <h4>{file.name}</h4>
+                    <div className='centered-element'>
+                        <div className="uploadedContainer">
+                            <div className='fileNameCenter'>
+                                File: {file.name}
+                                <img src={Checkicon} alt="Uploaded" className='checkIcon'/>
+                            </div>
+                        </div>
+                        <button onClick={handleSubmit}>Trancribe</button>
                     </div>
+                    
                 )}
                 </div>
             </div>
 
-            <button onClick={handleSubmit}>Trancribe</button>
         </div>
     );
 }

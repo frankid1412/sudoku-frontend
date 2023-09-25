@@ -1,8 +1,14 @@
-import React from "react";
+import { useNavigate } from 'react-router-dom';
 import styles from "../Card/Card.module.css";
 import Credit from "../../../../asset/Coins.svg";
 
-const Card = ({ category, toolName, description, action, cost }) => {
+const Card = ({ category, toolName, description, action, cost, url }) => {
+  const navigate = useNavigate();
+  
+  const handleButtonClick = () => {
+    navigate(url);
+  }
+
   return (
     <>
       <section className={styles.card}>
@@ -11,7 +17,9 @@ const Card = ({ category, toolName, description, action, cost }) => {
           <h3 className={styles.cardToolName}>{toolName}</h3>
           <p className={styles.cardDescription}>{description}</p>
           <div className={styles.userCreditContainer}>
-            <button className={styles.cardButton}>{action}</button>
+            <button className={styles.cardButton} onClick={handleButtonClick}>
+              {action}
+            </button>
             <div className={styles.CreditIconAndNumber}>
               <img
                 src={Credit}
