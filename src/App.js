@@ -8,7 +8,7 @@ import TranscribePage from "./pages/transcribe_page/transcribe_page"
 import ConsolePage from './pages/ConsolePage/ConsolePage';
 import TextExtractPage from './pages/TextExtractPage/TextExtractPage';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
-
+import PollyPage from './pages/PollyPage/PollyPage';
 const App = () => {
   return (
     <Router>
@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/console" element={<ConsolePage/>}/>
           <Route path="/transcribe" element={<TranscribePage/>} />
           <Route path="/checkout" element={<CheckoutPage/>}/>
+          <Route path="/polly" element={<PollyPage/>}/>
         </Routes>
       </div>
     </Router>
